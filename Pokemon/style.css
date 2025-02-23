@@ -1,0 +1,17 @@
+:root {
+    --background: #0F1419;
+    --foreground: #B3B1AD;
+    --primary: #FFB454;
+    --secondary: #39BAE6;
+    --accent: #59C2FF;
+    --error: #FF3333;
+    --success: #A6CC70;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--primary);
+    overflow: scroll;
+    font-family: 'Courier New', monospace;
+    font-size: large;
+}

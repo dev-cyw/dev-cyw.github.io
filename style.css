@@ -1,0 +1,95 @@
+:root {
+    --background: #0F1419;
+    --foreground: white;
+    --primary: #FFB454;
+    --secondary: #39BAE6;
+    --accent: #59C2FF;
+    --error: #FF3333;
+    --success: #A6CC70;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--primary);
+    overflow: scroll;
+    font-family: 'Courier New', monospace;
+    font-size: large;
+}
+
+
+#topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 24px;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+#topbar a {
+    transition: border-color 0.3s linear, transform 0.2s ease-out;
+    text-decoration: none;
+    font-weight: bolder;
+    border-width: 2px;
+    border-color: var(--foreground);
+    padding: 3px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+#topbar a:hover {
+    background-color: var(--background);
+    border-color: var(--accent);
+}
+
+#topbar a:visited{
+    color: var(--foreground);
+}
+
+#topbar img {
+    max-height: 20px;
+    vertical-align: middle;
+}
+
+#topbar .left {
+    display: flex;
+}
+
+#topbar .right {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+p, h2, h3, h4, h5, h6 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    transition: background-color 0.4s ease-in, color 0.4s ease-in , transform 0.2s ease-out;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:visited {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--background);
+    background-color: var(--primary);
+}
+
+.locked {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: smaller;
+}
